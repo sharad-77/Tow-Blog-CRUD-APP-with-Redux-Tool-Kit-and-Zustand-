@@ -17,30 +17,30 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="signup" element={<SignupPage />} />
-          <Route path="blog/:id" element={<BlogDetail />} />
-          <Route 
-            path="/dashboard" 
+          <Route path="blog/:BlogId" element={<BlogDetail />} />
+          <Route
+            path="/dashboard"
             element={
               <PrivateRoute>
                 <DashboardPage />
               </PrivateRoute>
-            } 
+            }
           />
-          <Route 
-            path="/blog/create" 
+          <Route
+            path="/blog/create"
             element={
               <PrivateRoute>
                 <CreateBlog />
               </PrivateRoute>
-            } 
+            }
           />
-          <Route 
-            path="/blog/edit/:id" 
+          <Route
+            path="/blog/edit/:id"
             element={
               <PrivateRoute>
                 <EditBlog />
               </PrivateRoute>
-            } 
+            }
           />
         </Route>
       </Routes>

@@ -13,7 +13,12 @@ type UserState = {
 }
 
 const initialState: UserState = {
-  users: [],
+  users: [{
+    id:"sadfasdfasdfasdfasdf",
+    name: "Sharad",
+    email: "chavdasharad54@gmail.com",
+    password:"123456"
+  },],
 }
 
 const usersSlice = createSlice({
